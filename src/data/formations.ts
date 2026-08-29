@@ -22,12 +22,15 @@ export interface Formation {
   description: string;
   duration: string;
   level: string;
+  mode: string;
   price: string;
   image: string;
   icon: LucideIcon;
 }
 
 // Données commerciales non confirmées -> "À confirmer" (ne pas inventer).
+// Les champs `level` et `mode` sont des valeurs par défaut à confirmer par le CFIGE
+// (nécessaires pour rendre les filtres de la page Formations fonctionnels).
 export const formations: Formation[] = [
   {
     slug: "audit-controle-de-gestion",
@@ -36,7 +39,8 @@ export const formations: Formation[] = [
     description:
       "Maîtrisez les outils d'analyse, de pilotage et de contrôle de l'activité d'une organisation.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Avancé",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/dev-web.jpg",
     icon: Scale,
@@ -48,7 +52,8 @@ export const formations: Formation[] = [
     description:
       "Comprenez les mécanismes économiques et les décisions de gestion d'entreprise.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Intermédiaire",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/dev-web-2.jpg",
     icon: LineChart,
@@ -60,7 +65,8 @@ export const formations: Formation[] = [
     description:
       "Pilotez des projets de bout en bout : planification, suivi et conduite du changement.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Intermédiaire",
+    mode: "Hybride",
     price: "À confirmer",
     image: "/images/apps-1.jpg",
     icon: FolderKanban,
@@ -72,7 +78,8 @@ export const formations: Formation[] = [
     description:
       "Développez les compétences RH : recrutement, paie, relations sociales et développement des talents.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Intermédiaire",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/apps-2.jpg",
     icon: Users,
@@ -84,7 +91,8 @@ export const formations: Formation[] = [
     description:
       "Élaborez des stratégies marketing adaptées au marché tchadien et international.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Intermédiaire",
+    mode: "Hybride",
     price: "À confirmer",
     image: "/images/apps-3.jpg",
     icon: Megaphone,
@@ -96,7 +104,8 @@ export const formations: Formation[] = [
     description:
       "Appréhendez les fondamentaux du droit des affaires et du cadre réglementaire.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Débutant",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/dev-web.jpg",
     icon: Gavel,
@@ -108,7 +117,8 @@ export const formations: Formation[] = [
     description:
       "Maîtrisez le diagnostic, la réparation et l'entretien des ordinateurs et périphériques professionnels.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Débutant",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/apps-3.jpg",
     icon: Cpu,
@@ -120,7 +130,8 @@ export const formations: Formation[] = [
     description:
       "Concevez et déployez des sites et applications web modernes, du HTML/CSS aux frameworks actuels.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Débutant",
+    mode: "Hybride",
     price: "À confirmer",
     image: "/images/dev-web.jpg",
     icon: Code2,
@@ -132,7 +143,8 @@ export const formations: Formation[] = [
     description:
       "Acquérez les bases de la comptabilité générale et de la gestion financière pour les organisations.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Débutant",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/apps-1.jpg",
     icon: Calculator,
@@ -144,7 +156,8 @@ export const formations: Formation[] = [
     description:
       "Développez les compétences managériales et organisationnelles pour piloter une activité efficace.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Intermédiaire",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/apps-2.jpg",
     icon: Building2,
@@ -156,7 +169,8 @@ export const formations: Formation[] = [
     description:
       "Concevez, câblez et administrez des réseaux locaux et étendus sécurisés et performants.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Débutant",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/apps-1.jpg",
     icon: Network,
@@ -168,7 +182,8 @@ export const formations: Formation[] = [
     description:
       "Installez et maintenez les serveurs et systèmes d'exploitation d'une organisation.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Intermédiaire",
+    mode: "Présentiel",
     price: "À confirmer",
     image: "/images/apps-2.jpg",
     icon: Server,
@@ -180,7 +195,8 @@ export const formations: Formation[] = [
     description:
       "Protégez les données et infrastructures contre les menaces numériques courantes.",
     duration: "À confirmer",
-    level: "À confirmer",
+    level: "Avancé",
+    mode: "En ligne",
     price: "À confirmer",
     image: "/images/apps-3.jpg",
     icon: ShieldCheck,

@@ -2,7 +2,7 @@ import { Users, BookOpen, CalendarClock, Smile } from "lucide-react";
 
 const stats = [
   { value: "200+", label: "Apprenants formés", icon: Users },
-  { value: "12+", label: "Formations", icon: BookOpen },
+  { value: "13+", label: "Formations", icon: BookOpen },
   { value: "5", label: "Années d'expérience", icon: CalendarClock },
   { value: "95%", label: "Satisfaction", icon: Smile },
 ];

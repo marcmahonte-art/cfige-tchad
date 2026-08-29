@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Stats } from "@/components/home/Stats";
 import { FormationCatalog } from "@/components/formations/FormationCatalog";
 import { WhyCfige } from "@/components/home/WhyCfige";
@@ -15,7 +16,9 @@ export default function FormationsPage() {
   return (
     <>
       <Stats />
-      <FormationCatalog />
+      <Suspense fallback={null}>
+        <FormationCatalog />
+      </Suspense>
       <WhyCfige />
       <ProchainesSessions />
       <ContactSection />
