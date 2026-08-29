@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ServicesHero } from "@/components/services/ServicesHero";
+import { ExpertiseSection } from "@/components/home/ExpertiseSection";
 import { ServiceGrid } from "@/components/services/ServiceGrid";
 import { AdvantagesSection } from "@/components/services/AdvantagesSection";
 import { ProductsSection } from "@/components/services/ProductsSection";
@@ -15,6 +16,7 @@ export default function ServicesPage() {
   return (
     <main>
       <ServicesHero />
+      <ExpertiseSection />
       <ServiceGrid />
       <AdvantagesSection />
       <ProductsSection />

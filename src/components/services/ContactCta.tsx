@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 export function ContactCta() {
   return (
     <section
+      id="contact"
       className="cfige-section bg-[#FDFDFE]"
       aria-labelledby="contact-cta-title"
     >
