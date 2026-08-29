@@ -29,7 +29,7 @@ export function Header() {
     >
       <div className="cfige-container flex h-16 items-center justify-between md:h-20">
         <a
-          href="#accueil"
+          href="/"
           className="flex items-center"
           aria-label={`${site.name} — ${site.fullName}`}
         >

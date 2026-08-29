@@ -17,10 +17,10 @@ const servicesLinks = [
   "Conseil",
 ];
 const cfigeLinks = [
-  { label: "À propos", href: "#apropos" },
-  { label: "Équipe", href: "#apropos" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "À propos", href: "/#apropos" },
+  { label: "Équipe", href: "/#apropos" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function Footer() {
@@ -52,7 +52,7 @@ export function Footer() {
               {formationsLinks.map((label) => (
                 <li key={label}>
                   <a
-                    href="#formations"
+                    href="/formations"
                     className="text-sm leading-6 text-gray-400 transition-colors hover:text-white"
                   >
                     {label}
@@ -71,7 +71,7 @@ export function Footer() {
               {servicesLinks.map((label) => (
                 <li key={label}>
                   <a
-                    href="#services"
+                    href="/#services"
                     className="text-sm leading-6 text-gray-400 transition-colors hover:text-white"
                   >
                     {label}

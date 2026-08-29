@@ -18,11 +18,11 @@ export const site = {
     instagram: "",
   },
   nav: [
-    { label: "Accueil", href: "#accueil" },
+    { label: "Accueil", href: "/" },
     { label: "Formations", href: "/formations" },
-    { label: "Services", href: "#services" },
-    { label: "À propos", href: "#apropos" },
-    { label: "Blog", href: "#blog" },
-    { label: "Contact", href: "#contact" },
+    { label: "Services", href: "/#services" },
+    { label: "À propos", href: "/#apropos" },
+    { label: "Blog", href: "/#blog" },
+    { label: "Contact", href: "/#contact" },
   ],
 } as const;
