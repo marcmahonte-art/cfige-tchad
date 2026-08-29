@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, GraduationCap, Cpu } from "lucide-react";
+import { ArrowRight, GraduationCap, Cpu, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -106,13 +106,31 @@ export function Hero() {
             </div>
 
             {/* Label flottant */}
-            <div className="absolute -bottom-4 left-6 z-20 flex items-center gap-2 rounded-xl border border-gray-100 bg-white px-4 py-2.5 shadow-cfige-md">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-light text-primary">
-                <GraduationCap className="h-5 w-5" />
-              </span>
-              <span className="text-sm font-semibold text-gray-900">
-                Apprenants accompagnés
-              </span>
+            <div className="absolute -bottom-4 left-6 z-20 flex flex-col gap-2 rounded-xl border border-gray-100 bg-white px-4 py-3 shadow-cfige-md">
+              <div className="flex items-center gap-2">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-light text-primary">
+                  <Users className="h-4 w-4" />
+                </span>
+                <span className="text-sm font-semibold text-gray-900">
+                  Apprenants accompagnés
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-light text-primary">
+                  <GraduationCap className="h-4 w-4" />
+                </span>
+                <span className="text-sm font-semibold text-gray-900">
+                  Formation pratique
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-light text-primary">
+                  <Award className="h-4 w-4" />
+                </span>
+                <span className="text-sm font-semibold text-gray-900">
+                  Experts qualifiés
+                </span>
+              </div>
             </div>
           </div>
         </div>
