@@ -10,6 +10,9 @@ import {
   Users,
   Megaphone,
   Gavel,
+  Network,
+  Server,
+  ShieldCheck,
 } from "lucide-react";
 
 export interface Formation {
@@ -124,7 +127,7 @@ export const formations: Formation[] = [
   },
   {
     slug: "comptabilite-gestion",
-    category: "Comptabilité & Gestion",
+    category: "Comptabilité & Finance",
     title: "Comptabilité & Gestion",
     description:
       "Acquérez les bases de la comptabilité générale et de la gestion financière pour les organisations.",
@@ -145,5 +148,41 @@ export const formations: Formation[] = [
     price: "À confirmer",
     image: "/images/apps-2.jpg",
     icon: Building2,
+  },
+  {
+    slug: "reseaux-informatiques",
+    category: "Réseaux & Systèmes",
+    title: "Réseaux informatiques",
+    description:
+      "Concevez, câblez et administrez des réseaux locaux et étendus sécurisés et performants.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/apps-1.jpg",
+    icon: Network,
+  },
+  {
+    slug: "administration-systemes",
+    category: "Réseaux & Systèmes",
+    title: "Administration des systèmes",
+    description:
+      "Installez et maintenez les serveurs et systèmes d'exploitation d'une organisation.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/apps-2.jpg",
+    icon: Server,
+  },
+  {
+    slug: "securite-des-reseaux",
+    category: "Réseaux & Systèmes",
+    title: "Cybersécurité & sécurité des réseaux",
+    description:
+      "Protégez les données et infrastructures contre les menaces numériques courantes.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/apps-3.jpg",
+    icon: ShieldCheck,
   },
 ];
