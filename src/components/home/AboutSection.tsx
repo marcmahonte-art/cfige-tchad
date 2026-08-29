@@ -32,11 +32,29 @@ export function AboutSection() {
           >
             Un partenaire pour vos compétences et votre transformation digitale
           </h2>
-          <p className="mt-5 max-w-[560px] text-base leading-6 text-gray-600">
-            Le CFIGE accompagne les étudiants, professionnels, entreprises et
-            organisations dans le développement de compétences pratiques et dans
-            l&apos;adoption de solutions numériques adaptées à leurs besoins.
-          </p>
+          <div className="mt-5 max-w-[560px] space-y-4 text-base leading-6 text-gray-600">
+            <p>
+              Le CFIGE SARL est un centre spécialisé dans la formation
+              professionnelle, les services numériques et le conseil en gestion
+              basé à N&apos;Djamena au Tchad.
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">
+                Notre mission :
+              </span>{" "}
+              est de renforcer l&apos;employabilité des jeunes, d&apos;accompagner
+              les organisations dans leur transformation digitale et de
+              contribuer au développement des compétences professionnelles au
+              Tchad et en Afrique centrale.
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">
+                Notre vision :
+              </span>{" "}
+              Devenir un centre de référence en formation professionnelle et en
+              transformation digitale en Afrique centrale.
+            </p>
+          </div>
           <div className="mt-6">
             <Button asChild variant="outline">
               <a href="#apropos">
