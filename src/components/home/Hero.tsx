@@ -36,8 +36,10 @@ export function Hero() {
             className="cfige-reveal mt-6 max-w-[520px] text-[18px] leading-7 text-gray-600"
             style={{ animationDelay: "120ms" }}
           >
-            Formations professionnelles, solutions numériques et accompagnement
-            des entreprises à N&apos;Djaména et partout au Tchad.
+            Le Centre de Formation Informatique et de Gestion (CFIGE SARL)
+            accompagne étudiants, professionnels, entreprises et organisations
+            dans le développement de compétences pratiques, digitales et
+            managériales adaptées aux exigences du marché.
           </p>
 
           <div
