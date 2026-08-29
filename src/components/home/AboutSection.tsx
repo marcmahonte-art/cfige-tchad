@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { site } from "@/data/site";
 import { Button } from "@/components/ui/button";
 
 export function AboutSection() {
@@ -7,13 +8,14 @@ export function AboutSection() {
     <section id="apropos" className="cfige-section bg-white" aria-labelledby="apropos-title">
       <div className="cfige-container grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[16px] border border-gray-200 shadow-cfige-sm">
+          <div className="relative flex aspect-[4/3] w-full items-center justify-center overflow-hidden rounded-[16px] border border-gray-200 bg-gray-50 p-10">
             <Image
-              src="/images/dev-web.jpg"
-              alt="Apprenants en formation au CFIGE à N'Djaména"
+              src="/images/logo.png"
+              alt={`${site.name} — ${site.fullName}`}
               fill
               sizes="(max-width: 1024px) 100vw, 480px"
-              className="object-cover"
+              className="object-contain"
+              priority={false}
             />
           </div>
         </div>
