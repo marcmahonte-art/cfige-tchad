@@ -9,8 +9,8 @@ export const site = {
   phones: ["+235 66 91 02 96", "+235 95 69 22 00"],
   email: "contact@cfige-tchad.com",
   address: "7e arrondissement, N'Djaména, Tchad",
-  // Numéro WhatsApp non confirmé — ne pas inventer.
-  whatsappNumber: "TODO: À CONFIRMER",
+  // Numéro WhatsApp confirmé par le client.
+  whatsappNumber: "+235 66 91 02 96",
   social: {
     // Réseaux réels à confirmer avant activation. Laisser vide = non affiché.
     facebook: "",

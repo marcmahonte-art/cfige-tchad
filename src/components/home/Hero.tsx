@@ -93,13 +93,14 @@ export function Hero() {
             </div>
 
             {/* Image (z-10) */}
-            <div className="relative z-10 aspect-[16/10] w-full overflow-hidden rounded-[20px] border border-gray-200 shadow-cfige-md">
+            <div className="relative z-10 aspect-[16/10] w-full overflow-hidden rounded-[20px]">
               <Image
                 src="/images/hero.png"
                 alt="Apprenants en formation informatique au CFIGE à N'Djaména"
                 fill
                 priority
-                sizes="(max-width: 1024px) 100vw, 680px"
+                quality={100}
+                sizes="(max-width: 1024px) 100vw, 713px"
                 className="object-cover"
               />
             </div>

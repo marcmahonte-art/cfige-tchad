@@ -1,14 +1,14 @@
-const WHATSAPP_NUMBER = "TODO: À CONFIRMER";
+import { site } from "@/data/site";
+
 const WHATSAPP_COLOR = "#25D366";
 
 function whatsappHref(number: string) {
-  if (number.startsWith("TODO")) return "#contact";
   const digits = number.replace(/[^0-9]/g, "");
   return `https://wa.me/${digits}`;
 }
 
 export function WhatsAppButton() {
-  const href = whatsappHref(WHATSAPP_NUMBER);
+  const href = whatsappHref(site.whatsappNumber);
   return (
     <a
       href={href}
