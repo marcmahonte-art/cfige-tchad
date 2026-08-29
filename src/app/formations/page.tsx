@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { FormationsHero } from "@/components/formations/FormationsHero";
 import { Stats } from "@/components/home/Stats";
 import { FormationCatalog } from "@/components/formations/FormationCatalog";
 import { WhyCfige } from "@/components/home/WhyCfige";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function FormationsPage() {
   return (
     <>
+      <FormationsHero />
       <Stats />
       <Suspense fallback={null}>
         <FormationCatalog />
