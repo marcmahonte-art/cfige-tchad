@@ -71,7 +71,7 @@ export function Footer() {
               {servicesLinks.map((label) => (
                 <li key={label}>
                   <a
-                    href="/#services"
+                    href="/services"
                     className="text-sm leading-6 text-gray-400 transition-colors hover:text-white"
                   >
                     {label}
