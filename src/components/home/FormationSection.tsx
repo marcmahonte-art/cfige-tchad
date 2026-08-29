@@ -1,9 +1,18 @@
+"use client";
+
+import * as React from "react";
 import Image from "next/image";
-import { ArrowRight, Clock, BarChart3, Tag } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Clock, BarChart3, Tag } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { formations } from "@/data/formations";
 
 export function FormationSection() {
+  const scrollRef = React.useRef<HTMLDivElement>(null);
+
+  const scrollBy = (dir: number) => {
+    scrollRef.current?.scrollBy({ left: dir * 340, behavior: "smooth" });
+  };
+
   return (
     <section id="formations" className="cfige-section bg-gray-50" aria-labelledby="formations-title">
       <div className="cfige-container">
@@ -23,27 +32,48 @@ export function FormationSection() {
               votre carrière ou votre entreprise.
             </p>
           </div>
-          <a
-            href="#formations"
-            className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-primary hover:text-primary-dark"
-          >
-            Toutes les formations
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          <div className="flex shrink-0 items-center gap-2">
+            <a
+              href="#formations"
+              className="mr-2 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-primary-dark"
+            >
+              Toutes les formations
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <button
+              type="button"
+              onClick={() => scrollBy(-1)}
+              aria-label="Formations précédentes"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:shadow-[0_0_0_3px_rgba(227,6,19,.12)]"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollBy(1)}
+              aria-label="Formations suivantes"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:shadow-[0_0_0_3px_rgba(227,6,19,.12)]"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+          </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div
+          ref={scrollRef}
+          className="mt-10 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 [scrollbar-width:thin]"
+        >
           {formations.map((f) => (
             <article
               key={f.slug}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-cfige-md"
+              className="group flex w-[300px] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-cfige-md"
             >
               <div className="relative h-[180px] w-full overflow-hidden">
                 <Image
                   src={f.image}
                   alt={f.title}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 290px"
+                  sizes="300px"
                   className="object-cover"
                 />
                 <Badge variant="primary" className="absolute left-3 top-3">

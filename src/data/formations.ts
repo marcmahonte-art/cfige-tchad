@@ -4,6 +4,12 @@ import {
   Code2,
   Calculator,
   Building2,
+  Scale,
+  LineChart,
+  FolderKanban,
+  Users,
+  Megaphone,
+  Gavel,
 } from "lucide-react";
 
 export interface Formation {
@@ -20,6 +26,78 @@ export interface Formation {
 
 // Données commerciales non confirmées -> "À confirmer" (ne pas inventer).
 export const formations: Formation[] = [
+  {
+    slug: "audit-controle-de-gestion",
+    category: "Gestion",
+    title: "Audit et Contrôle de gestion",
+    description:
+      "Maîtrisez les outils d'analyse, de pilotage et de contrôle de l'activité d'une organisation.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/dev-web.jpg",
+    icon: Scale,
+  },
+  {
+    slug: "economie-de-gestion",
+    category: "Gestion",
+    title: "Économie de gestion",
+    description:
+      "Comprenez les mécanismes économiques et les décisions de gestion d'entreprise.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/dev-web-2.jpg",
+    icon: LineChart,
+  },
+  {
+    slug: "management-des-projets",
+    category: "Management",
+    title: "Management des projets",
+    description:
+      "Pilotez des projets de bout en bout : planification, suivi et conduite du changement.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/apps-1.jpg",
+    icon: FolderKanban,
+  },
+  {
+    slug: "gestion-des-ressources-humaines",
+    category: "Ressources humaines",
+    title: "Gestion des ressources humaines",
+    description:
+      "Développez les compétences RH : recrutement, paie, relations sociales et développement des talents.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/apps-2.jpg",
+    icon: Users,
+  },
+  {
+    slug: "marketing-et-strategie",
+    category: "Marketing",
+    title: "Marketing et stratégie",
+    description:
+      "Élaborez des stratégies marketing adaptées au marché tchadien et international.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/apps-3.jpg",
+    icon: Megaphone,
+  },
+  {
+    slug: "sciences-juridiques",
+    category: "Droit",
+    title: "Sciences juridiques",
+    description:
+      "Appréhendez les fondamentaux du droit des affaires et du cadre réglementaire.",
+    duration: "À confirmer",
+    level: "À confirmer",
+    price: "À confirmer",
+    image: "/images/dev-web.jpg",
+    icon: Gavel,
+  },
   {
     slug: "maintenance-informatique",
     category: "Informatique",
