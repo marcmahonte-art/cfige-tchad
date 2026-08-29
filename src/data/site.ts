@@ -19,7 +19,7 @@ export const site = {
   },
   nav: [
     { label: "Accueil", href: "#accueil" },
-    { label: "Formations", href: "#formations" },
+    { label: "Formations", href: "/formations" },
     { label: "Services", href: "#services" },
     { label: "À propos", href: "#apropos" },
     { label: "Blog", href: "#blog" },
