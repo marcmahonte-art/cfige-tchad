@@ -159,7 +159,7 @@ export const formations: Formation[] = [
     level: "Intermédiaire",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/formations/comptabilite-gestion.png"
+    image: "/images/formations/comptabilite-gestion.png",
     icon: Building2,
   },
   {
