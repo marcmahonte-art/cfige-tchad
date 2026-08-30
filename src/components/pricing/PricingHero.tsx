@@ -19,7 +19,7 @@ export function PricingHero() {
               Investissez dans{" "}
               <span className="text-primary">votre avenir</span>
             </h1>
-            <p className="mt-4 max-w-[335px] text-[11px] leading-[1.8] text-[#303B45]">
+            <p className="mt-4 max-w-[335px] text-[13px] leading-[1.8] text-[#303B45]">
               Des formations de qualité à des tarifs compétitifs, adaptées à
               vos objectifs et à votre budget.
             </p>
