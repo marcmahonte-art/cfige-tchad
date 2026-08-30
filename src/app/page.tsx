@@ -3,6 +3,7 @@ import { Stats } from "@/components/home/Stats";
 import { AboutSection } from "@/components/home/AboutSection";
 import { ExpertiseSection } from "@/components/home/ExpertiseSection";
 import { FormationSection } from "@/components/home/FormationSection";
+import { ManagementServices } from "@/components/home/ManagementServices";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { WhyCfige } from "@/components/home/WhyCfige";
 import { MethodSection } from "@/components/home/MethodSection";
@@ -19,6 +20,7 @@ export default function HomePage() {
       <AboutSection />
       <ExpertiseSection />
       <FormationSection />
+      <ManagementServices />
       <ServicesSection />
       <WhyCfige />
       <MethodSection />
