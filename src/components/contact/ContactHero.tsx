@@ -56,16 +56,15 @@ export function ContactHero() {
             </div>
           </div>
 
-          <div className="relative flex justify-center lg:justify-end">
-            {/* Forme circulaire / arc signature CFIGE */}
-            <div className="relative h-[280px] sm:h-[340px] lg:h-[380px] w-full max-w-[480px] rounded-l-[120px] rounded-r-3xl sm:rounded-l-[160px] sm:rounded-r-3xl overflow-hidden border-4 sm:border-[6px] border-primary shadow-cfige-lg bg-gray-50">
+          <div className="flex justify-center items-center py-4 lg:py-0">
+            <div className="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[520px] flex items-center justify-center">
               <Image
                 src="/images/telephone.png"
                 alt="Contactez le CFIGE"
-                fill
+                width={520}
+                height={420}
                 priority
-                className="object-cover object-center"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 500px"
+                className="w-full h-auto max-h-[380px] sm:max-h-[420px] object-contain drop-shadow-md transition-transform duration-300 hover:scale-[1.02]"
               />
             </div>
           </div>
