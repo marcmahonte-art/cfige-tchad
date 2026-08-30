@@ -1,147 +1,100 @@
 import Image from "next/image";
+import { ShieldCheck, BadgePercent, CalendarCheck, Headphones } from "lucide-react";
 
 export function PricingHero() {
   return (
     <section
-      className="relative pt-6 pb-12 overflow-hidden"
+      className="relative bg-white py-12 sm:py-16 lg:py-20 border-b border-gray-200 overflow-hidden"
       aria-labelledby="pricing-hero-title"
     >
-      <div className="container-site">
-        <div className="grid lg:grid-cols-[.92fr_1.25fr] lg:gap-8 md:gap-6">
+      <div className="cfige-container">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-14 items-center">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
-              TARIFS &amp; MODALITÉS —
-            </p>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
+                TARIFS &amp; MODALITÉS
+              </span>
+              <span className="h-0.5 w-6 bg-primary" />
+            </div>
             <h1
               id="pricing-hero-title"
-              className="mt-2 text-[40px] font-bold leading-[1.05] tracking-[-0.03em] text-[#1A2733] md:text-[47px]"
+              className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight text-gray-900"
             >
               Investissez dans{" "}
               <span className="text-primary">votre avenir</span>
             </h1>
-            <p className="mt-4 max-w-[335px] text-[13px] leading-[1.8] text-[#303B45]">
-              Des formations de qualité à des tarifs compétitifs, adaptées à
-              vos objectifs et à votre budget.
+            <p className="mt-5 text-base sm:text-lg leading-relaxed text-gray-600 max-w-xl">
+              Des formations de haute qualité à des tarifs compétitifs, adaptées à vos objectifs de carrière et à votre budget.
             </p>
 
-            <div className="mt-6 grid grid-cols-2 gap-4">
-              <div className="flex items-start gap-2">
-                <span className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-[#FFF1F2] text-primary">
-                  <svg
-                    className="h-3 w-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3 p-3.5 rounded-xl border border-gray-100 bg-gray-50/70">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-light text-primary">
+                  <ShieldCheck className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-[13px] font-bold text-[#17212B]">
+                  <p className="text-sm font-bold text-gray-900">
                     Qualité garantie
                   </p>
-                  <p className="text-[9.5px] leading-[1.4] text-[#69737D]">
-                    Formations certifiantes et reconnues
+                  <p className="text-xs text-gray-500 leading-normal mt-0.5">
+                    Formations certifiantes reconnues
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-2">
-                <span className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-[#FFF1F2] text-primary">
-                  <svg
-                    className="h-3 w-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
+
+              <div className="flex items-start gap-3 p-3.5 rounded-xl border border-gray-100 bg-gray-50/70">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-light text-primary">
+                  <BadgePercent className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-[13px] font-bold text-[#17212B]">
+                  <p className="text-sm font-bold text-gray-900">
                     Tarifs compétitifs
                   </p>
-                  <p className="text-[9.5px] leading-[1.4] text-[#69737D]">
-                    Des prix justes et accessibles
+                  <p className="text-xs text-gray-500 leading-normal mt-0.5">
+                    Des prix justes et transparents
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-2">
-                <span className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-[#FFF1F2] text-primary">
-                  <svg
-                    className="h-3 w-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
+
+              <div className="flex items-start gap-3 p-3.5 rounded-xl border border-gray-100 bg-gray-50/70">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-light text-primary">
+                  <CalendarCheck className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-[13px] font-bold text-[#17212B]">
+                  <p className="text-sm font-bold text-gray-900">
                     Modalités flexibles
                   </p>
-                  <p className="text-[9.5px] leading-[1.4] text-[#69737D]">
+                  <p className="text-xs text-gray-500 leading-normal mt-0.5">
                     Paiement échelonné possible
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-2">
-                <span className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-[#FFF1F2] text-primary">
-                  <svg
-                    className="h-3 w-3"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
+
+              <div className="flex items-start gap-3 p-3.5 rounded-xl border border-gray-100 bg-gray-50/70">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary-light text-primary">
+                  <Headphones className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-[13px] font-bold text-[#17212B]">
+                  <p className="text-sm font-bold text-gray-900">
                     Accompagnement
                   </p>
-                  <p className="text-[9.5px] leading-[1.4] text-[#69737D]">
-                    Support avant, pendant et après
+                  <p className="text-xs text-gray-500 leading-normal mt-0.5">
+                    Support continu et personnalisé
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative h-[300px] sm:h-[360px] lg:h-[400px] w-full rounded-2xl overflow-hidden border border-gray-200 shadow-cfige-sm bg-gray-50">
             <Image
               src="/images/apropos/apropos.png"
-              alt="Bâtiment du CFIGE à N'Djaména"
+              alt="Locaux et apprenants du CFIGE"
               fill
               priority
               className="object-cover object-center"
-              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 540px"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
             />
-            <div className="absolute inset-0 bg-black/30 z-10 transition-opacity duration-300" />
           </div>
         </div>
       </div>

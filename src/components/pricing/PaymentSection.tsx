@@ -10,18 +10,20 @@ interface PaymentStepProps {
 
 function PaymentStep({ number, title, subtitle, description, icon }: PaymentStepProps) {
   return (
-    <div className="flex flex-col items-center text-center rounded-[10px] border border-[#E9ECEF] bg-white p-6 shadow-[0_3px_14px_rgba(17,30,42,.035)] transition-all duration-200 hover:-translate-y-[3px]">
-      <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#FFF1F2] text-primary">
+    <div className="relative flex flex-col items-center text-center rounded-2xl border border-gray-200 bg-white p-7 shadow-cfige-sm transition-all duration-300 hover:border-primary hover:shadow-cfige-md hover:-translate-y-1">
+      <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-white shadow-sm ring-4 ring-white">
+        {number}
+      </span>
+      <span className="mt-2 mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-primary">
         {icon}
       </span>
-      <span className="text-[13px] font-bold uppercase tracking-[0.08em] text-primary">
-        Étape {number}
-      </span>
-      <h3 className="mt-2 text-[16px] font-bold leading-5 text-[#17212B]">
+      <h3 className="text-lg font-bold text-gray-900 leading-snug">
         {title}
       </h3>
-      <p className="mt-1 text-[12px] font-semibold text-primary">{subtitle}</p>
-      <p className="mt-2 text-[12px] leading-[1.6] text-[#69737D]">
+      <p className="mt-1 text-xs font-bold uppercase tracking-wider text-primary">
+        {subtitle}
+      </p>
+      <p className="mt-3 text-sm leading-relaxed text-gray-600">
         {description}
       </p>
     </div>
@@ -30,41 +32,42 @@ function PaymentStep({ number, title, subtitle, description, icon }: PaymentStep
 
 export function PaymentSection() {
   return (
-    <section className="cfige-section bg-white" aria-labelledby="payment-title">
-      <div className="container-site">
+    <section className="cfige-section bg-gray-50 border-b border-gray-200" aria-labelledby="payment-title">
+      <div className="cfige-container">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
-            PAIEMENT —
+            FACILITÉS DE RÈGLEMENT
           </p>
-          <h2 id="payment-title" className="mt-3 text-[28px] font-bold tracking-[-0.025em] text-[#17212B]">
-            Conditions de Paiement
+          <h2 id="payment-title" className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
+            Modalités &amp; Conditions de Paiement
           </h2>
-          <p className="mt-3 text-[13px] leading-[1.6] text-[#69737D]">
-            Simple et flexible
+          <p className="mt-3 text-sm sm:text-base text-gray-600">
+            Des options souples et adaptées pour financer votre formation en toute sérénité
           </p>
+          <span className="mx-auto mt-3 block h-1 w-10 rounded-full bg-primary" />
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
           <PaymentStep
             number="01"
-            title="50 %"
-            subtitle="À l&apos;inscription"
-            description="Un acompte de 50 % est requis pour valider l&apos;inscription."
-            icon={<CreditCard className="h-6 w-6" strokeWidth={1.8} />}
+            title="Acompte de 50 %"
+            subtitle="À l'inscription"
+            description="Un acompte de 50 % valide formellement votre place et déclenche la remise des supports pédagogiques."
+            icon={<CreditCard className="h-7 w-7" strokeWidth={1.8} />}
           />
           <PaymentStep
             number="02"
             title="Paiement échelonné"
-            subtitle="Possible pour les formations longues"
-            description="Étalez votre paiement sur la durée de votre formation sans frais supplémentaires."
-            icon={<CalendarClock className="h-6 w-6" strokeWidth={1.8} />}
+            subtitle="Sans frais additionnels"
+            description="Étalez le solde restant sur la durée de votre cursus sans aucun intérêt ni frais caché."
+            icon={<CalendarClock className="h-7 w-7" strokeWidth={1.8} />}
           />
           <PaymentStep
             number="03"
-            title="Contrats annuels"
-            subtitle="Tarification spéciale disponible"
-            description="Des tarifs préférentiels pour les engagements sur l&apos;année avec entreprises et institutions."
-            icon={<FileCheck2 className="h-6 w-6" strokeWidth={1.8} />}
+            title="Contrats & Bon de commande"
+            subtitle="Entreprises & Institutions"
+            description="Facturation avec délai de règlement sur bon de commande pour les organisations conventionnées."
+            icon={<FileCheck2 className="h-7 w-7" strokeWidth={1.8} />}
           />
         </div>
       </div>

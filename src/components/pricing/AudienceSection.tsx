@@ -1,4 +1,4 @@
-import { Users, Briefcase, Building2 } from "lucide-react";
+import { GraduationCap, Briefcase, Building2 } from "lucide-react";
 import { AudiencePricingCard } from "./AudiencePricingCard";
 
 const studentRows = [
@@ -21,34 +21,38 @@ const orgRows = [
 
 export function AudienceSection() {
   return (
-    <section className="cfige-section bg-white" aria-labelledby="audience-title">
-      <div className="container-site">
+    <section className="cfige-section bg-gray-50 border-b border-gray-200" aria-labelledby="audience-title">
+      <div className="cfige-container">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
-            CIBLES —
+            PROFILES &amp; CIBLES
           </p>
-          <h2 id="audience-title" className="mt-3 text-[28px] font-bold tracking-[-0.025em] text-[#17212B]">
-            Tarification par Cible
+          <h2 id="audience-title" className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
+            Tarification adaptée par Public
           </h2>
-          <p className="mt-3 text-[13px] leading-[1.6] text-[#69737D]">
-            Un tarif adapté à votre profil
+          <p className="mt-3 text-sm sm:text-base text-gray-600">
+            Des grilles transparentes et modulables selon votre statut et vos besoins
           </p>
+          <span className="mx-auto mt-3 block h-1 w-10 rounded-full bg-primary" />
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
           <AudiencePricingCard
             title="Étudiants & Jeunes Diplômés"
-            icon={<Users className="h-5 w-5" strokeWidth={1.8} />}
+            badge="-20% Tarif Étudiant"
+            icon={<GraduationCap className="h-5 w-5" strokeWidth={1.9} />}
             rows={studentRows}
           />
           <AudiencePricingCard
             title="Professionnels & Salariés"
-            icon={<Briefcase className="h-5 w-5" strokeWidth={1.8} />}
+            badge="Standard Pro"
+            icon={<Briefcase className="h-5 w-5" strokeWidth={1.9} />}
             rows={proRows}
           />
           <AudiencePricingCard
-            title="PME / ONG / Institutions"
-            icon={<Building2 className="h-5 w-5" strokeWidth={1.8} />}
+            title="PME, ONG &amp; Institutions"
+            badge="Sur Mesure"
+            icon={<Building2 className="h-5 w-5" strokeWidth={1.9} />}
             rows={orgRows}
           />
         </div>

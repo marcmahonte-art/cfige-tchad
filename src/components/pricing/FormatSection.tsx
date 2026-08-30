@@ -2,21 +2,22 @@ import { FormatPriceCard } from "./FormatPriceCard";
 
 export function FormatSection() {
   return (
-    <section className="cfige-section bg-white" aria-labelledby="format-title">
-      <div className="container-site">
+    <section className="cfige-section bg-white border-b border-gray-200" aria-labelledby="format-title">
+      <div className="cfige-container">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
-            FORMATS —
+            PARCOURS DE FORMATION
           </p>
-          <h2 id="format-title" className="mt-3 text-[28px] font-bold tracking-[-0.025em] text-[#17212B]">
+          <h2 id="format-title" className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
             Fourchettes d&apos;Investissement par Format
           </h2>
-          <p className="mt-3 text-[13px] leading-[1.6] text-[#69737D]">
-            Quatre parcours, quatre niveaux d&apos;engagement
+          <p className="mt-3 text-sm sm:text-base text-gray-600">
+            Quatre parcours progressifs adaptés à votre rythme et à votre niveau d&apos;engagement
           </p>
+          <span className="mx-auto mt-3 block h-1 w-10 rounded-full bg-primary" />
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
           <FormatPriceCard
             number="01"
             name="Express"
