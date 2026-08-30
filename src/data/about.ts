@@ -50,7 +50,7 @@ export const values = [
     title: "Certification & diplômes",
     description:
       "Des attestations et diplômes reconnus qui valorisent vos compétences sur le marché de l'emploi.",
-    icon: "ScrollText",
+    icon: "BadgeCheck",
   },
   {
     title: "Réseau",
@@ -83,27 +83,35 @@ export const methods = [
 
 export const team = [
   {
-    name: "Hassan",
-    role: "Associé gérant",
-    bio: "Fort de nombreuses années d'expérience dans la formation professionnelle au Tchad, Hassan pilote la stratégie globale du CFIGE.",
+    name: "Mahamat Ali",
+    role: "Directeur Général",
+    bio: "Expert en management et stratégie de formation avec plus de 10 ans d'expérience.",
     image: "associe_gerant_cfige_Hassan Ngarmbassa Ngargouleye.jpg",
+    linkedin: "https://linkedin.com/company/cfige-tchad",
+    email: "mahamat.ali@cfige.tch",
   },
   {
-    name: "Abel",
-    role: "Fondateur",
-    bio: "Abel a créé le CFIGE dans le but de proposer des formations de qualité accessible à tous les Tchadiens.",
+    name: "Amina Hassan",
+    role: "Responsable Pédagogique",
+    bio: "Spécialiste en ingénierie de formation et accompagnement des apprenants.",
     image: "fondateur_cfige _MBATALBAYE ABEL.png",
+    linkedin: "https://linkedin.com/company/cfige-tchad",
+    email: "amina.hassan@cfige.tch",
   },
   {
-    name: "Adore",
-    role: "Directeur informatique",
-    bio: "Adore supervise le développement des programmes numériques et s'assure de leur pertinence technologique.",
+    name: "David Armand",
+    role: "Responsable Informatique",
+    bio: "Expert en développement web et solutions numériques innovantes.",
     image: "informaticien_cfige_ADORE ADJITEBAYE RAKIDJON.png",
+    linkedin: "https://linkedin.com/company/cfige-tchad",
+    email: "david.armand@cfige.tch",
   },
   {
-    name: "TOKMA",
-    role: "Responsable des opérations",
-    bio: "TOKMA assure le bon fonctionnement quotidien des formations et des partenariats industriels.",
+    name: "Fatimé Abdoulaye",
+    role: "Chargée des Partenariats",
+    bio: "En charge des relations entreprises et du développement des partenariats.",
     image: "responsable_cfige_TOKMA ONDJE.jpg",
+    linkedin: "https://linkedin.com/company/cfige-tchad",
+    email: "fatimé.abdoulaye@cfige.tch",
   },
 ]

@@ -1,5 +1,15 @@
 import { values } from "@/data/about";
 import { Card, CardContent } from "@/components/ui/card";
+import { Target, Handshake, Lightbulb, Globe2, BadgeCheck, Link2 } from "lucide-react";
+
+const iconMap: Record<string, React.ElementType> = {
+  Target,
+  Handshake,
+  Lightbulb,
+  Globe2,
+  "BadgeCheck": BadgeCheck,
+  Link2,
+};
 
 export function ValuesSection() {
   return (
@@ -23,7 +33,7 @@ export function ValuesSection() {
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {values.map((v) => {
-            const Icon = v.icon as React.ElementType;
+            const Icon = iconMap[v.icon];
             return (
               <Card
                 key={v.title}
@@ -41,7 +51,7 @@ export function ValuesSection() {
               >
                 <CardContent className="p-[17px]">
                   <div className="grid size-[52px] place-items-center rounded-full bg-[#FFF1F2] text-[#E10B1A]">
-                    <Icon className="size-[25px] stroke-[1.8]" />
+                    {Icon && <Icon className="size-[25px] stroke-[1.8]" />}
                   </div>
                   <h3 className="mt-[9px] text-[14px] font-bold leading-5 tracking-[-0.02em] text-[#17212B]">
                     {v.title}

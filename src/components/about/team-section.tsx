@@ -1,41 +1,6 @@
 import Image from "next/image";
 import { Mail, Linkedin } from "lucide-react";
-import { site } from "@/data/site";
-
-const team = [
-  {
-    name: "Hassan",
-    role: "Associé gérant",
-    bio: "Fort de nombreuses années d'expérience dans la formation professionnelle au Tchad, Hassan pilote la stratégie globale du CFIGE.",
-    image: "/images/apropos/equipe/associe_gerant_cfige_Hassan Ngarmbassa Ngargouleye.jpg",
-    linkedin: "#",
-    email: site.email,
-  },
-  {
-    name: "Abel",
-    role: "Fondateur",
-    bio: "Abel a créé le CFIGE dans le but de proposer des formations de qualité accessible à tous les Tchadiens.",
-    image: "/images/apropos/equipe/fondateur_cfige _MBATALBAYE ABEL.png",
-    linkedin: "#",
-    email: site.email,
-  },
-  {
-    name: "Adore",
-    role: "Directeur informatique",
-    bio: "Adore supervise le développement des programmes numériques et s'assure de leur pertinence technologique.",
-    image: "/images/apropos/equipe/informaticien_cfige_ADORE ADJITEBAYE RAKIDJON.png",
-    linkedin: "#",
-    email: site.email,
-  },
-  {
-    name: "TOKMA",
-    role: "Responsable des opérations",
-    bio: "TOKMA assure le bon fonctionnement quotidien des formations et des partenariats industriels.",
-    image: "/images/apropos/equipe/responsable_cfige_TOKMA ONDJE.jpg",
-    linkedin: "#",
-    email: site.email,
-  },
-];
+import { team } from "@/data/about";
 
 export function TeamSection() {
   return (
@@ -45,7 +10,9 @@ export function TeamSection() {
     >
       <div className="container-site">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.08em] text-white">LES PERSONNES DERRIÈRE LE CFIGE</p>
+          <p className="text-xs font-bold uppercase tracking-[0.08em] text-white">
+            LES PERSONNES DERRIÈRE LE CFIGE
+          </p>
           <h2
             id="team-title"
             className="mt-3 text-[27px] font-bold leading-[33px] text-center text-white"
@@ -64,41 +31,33 @@ export function TeamSection() {
                 src={m.image}
                 alt={m.name}
                 fill
-                className="object-cover object-top border-t border-[#EEF0F2] h-[121px]"
+                className="object-cover object-top border-t border-[#EEF0F2] h-[155px]"
                 sizes="100vw"
               />
-              <div
-                className="p-[12px_13px_14px] text-center text-sm"
-              >
-                <span
-                  className="block font-bold text-[13px] text-[#17212B] mb-[5px]"
-                >
+              <div className="p-[12px_13px_14px] text-center text-sm">
+                <span className="block font-bold text-[15px] text-[#17212B] mb-[5px]">
                   {m.name}
                 </span>
-                <span
-                  className="text-[10px] font-medium text-[#E10B1A] mb-[3px]"
-                >
+                <span className="text-[11px] font-bold text-[#E10B1A] mb-[3px]">
                   {m.role}
                 </span>
-                <p
-                  className="text-[9.5px] leading-[16px] text-[#4F5861]"
-                >
+                <p className="text-[11px] leading-[16px] text-center text-[#4F5861]">
                   {m.bio}
                 </p>
                 <div className="mt-4 flex justify-center space-x-3">
                   <a
                     href={m.linkedin}
                     aria-label={`LinkedIn de ${m.name}`}
-                    className="w-6 h-6 rounded-full bg-[#F4F5F6] flex items-center justify-center"
+                    className="w-8 h-8 rounded-full bg-[#F5F6F7] flex items-center justify-center"
                   >
-                    <Linkedin className="w-4 h-4 text-gray-500" />
+                    <Linkedin className="w-3.5 h-3.5 text-gray-500" />
                   </a>
                   <a
                     href={`mailto:${m.email}`}
                     aria-label={`Email de ${m.name}`}
-                    className="w-6 h-6 rounded-full bg-[#F4F5F6] flex items-center justify-center"
+                    className="w-8 h-8 rounded-full bg-[#F5F6F7] flex items-center justify-center"
                   >
-                    <Mail className="w-4 h-4 text-gray-500" />
+                    <Mail className="w-3.5 h-3.5 text-gray-500" />
                   </a>
                 </div>
               </div>
