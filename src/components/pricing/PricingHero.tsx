@@ -14,7 +14,7 @@ export function PricingHero() {
             </p>
             <h1
               id="pricing-hero-title"
-              className="mt-2 text-[40px] font-bold leading-[1.05] tracking-[-0.03em] text-white md:text-[47px]"
+              className="mt-2 text-[40px] font-bold leading-[1.05] tracking-[-0.03em] text-[#1A2733] md:text-[47px]"
             >
               Investissez dans{" "}
               <span className="text-primary">votre avenir</span>

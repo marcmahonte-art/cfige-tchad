@@ -13,7 +13,7 @@ export function AboutHero() {
             <p className="text-xs font-bold uppercase tracking-[0.08em] text-primary">À PROPOS —</p>
             <h1
               id="about-hero-title"
-              className="mt-2 text-[40px] font-bold leading-[1.05] tracking-[-0.03em] text-white md:text-[47px]"
+              className="mt-2 text-[40px] font-bold leading-[1.05] tracking-[-0.03em] text-[#1A2733] md:text-[47px]"
             >
               Qui <span className="text-primary">sommes-nous ?</span>
             </h1>
