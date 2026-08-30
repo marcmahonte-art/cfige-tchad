@@ -29,15 +29,17 @@ export function AboutHero() {
             </p>
           </div>
 
-            <div className="flex justify-center items-center py-8">
-              <Image
-                src="/logo_cfige.png"
-                alt="CFIGE logo"
-                width={300}
-                height={300}
-                priority
-                className="object-contain"
-              />
+            <div className="flex justify-center items-center py-4 lg:py-0">
+              <div className="relative w-full max-w-[360px] sm:max-w-[420px] flex items-center justify-center">
+                <Image
+                  src="/images/logo.png"
+                  alt="Logo officiel CFIGE"
+                  width={450}
+                  height={350}
+                  priority
+                  className="w-full h-auto max-h-[320px] object-contain transition-transform duration-300 hover:scale-105"
+                />
+              </div>
             </div>
         </div>
       </div>
