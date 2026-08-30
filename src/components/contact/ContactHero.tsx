@@ -60,8 +60,8 @@ export function ContactHero() {
             {/* Forme circulaire / arc signature CFIGE */}
             <div className="relative h-[280px] sm:h-[340px] lg:h-[380px] w-full max-w-[480px] rounded-l-[120px] rounded-r-3xl sm:rounded-l-[160px] sm:rounded-r-3xl overflow-hidden border-4 sm:border-[6px] border-primary shadow-cfige-lg bg-gray-50">
               <Image
-                src="/images/contact/contact.png"
-                alt="Équipe CFIGE à votre écoute"
+                src="/images/telephone.png"
+                alt="Contactez le CFIGE"
                 fill
                 priority
                 className="object-cover object-center"
