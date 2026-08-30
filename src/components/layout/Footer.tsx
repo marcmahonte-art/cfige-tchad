@@ -20,6 +20,7 @@ const servicesLinks = [
 const cfigeLinks = [
     { label: "À propos", href: "/a-propos" },
     { label: "Équipe", href: "/a-propos#equipe" },
+    { label: "Tarifs", href: "/tarifs-modalites" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];

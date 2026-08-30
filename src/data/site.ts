@@ -22,6 +22,7 @@ export const site = {
     { label: "Formations", href: "/formations" },
     { label: "Services", href: "/services" },
     { label: "À propos", href: "/#apropos" },
+    { label: "Tarifs", href: "/tarifs-modalites" },
     { label: "Blog", href: "/#blog" },
     { label: "Contact", href: "/#contact" },
   ],
