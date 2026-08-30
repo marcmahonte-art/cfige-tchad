@@ -1,17 +1,17 @@
-import { Users, BookOpen, CalendarClock, Smile } from "lucide-react";
+import { UsersRound, GraduationCap, CalendarDays, Star } from "lucide-react";
 
 const stats = [
-  { value: "200+", label: "Apprenants formés", icon: Users },
-  { value: "13+", label: "Formations", icon: BookOpen },
-  { value: "5", label: "Années d'expérience", icon: CalendarClock },
-  { value: "95%", label: "Satisfaction", icon: Smile },
+  { value: "200+", label: "Apprenants formés", icon: UsersRound },
+  { value: "12+", label: "Formations disponibles", icon: GraduationCap },
+  { value: "5", label: "Années d'expérience", icon: CalendarDays },
+  { value: "95%", label: "Taux de satisfaction", icon: Star },
 ];
 
 export function Stats() {
   return (
     <section aria-label="Chiffres clés" className="border-y border-gray-200 bg-white">
       <div className="cfige-container py-12">
-        <dl className="grid grid-cols-2 gap-x-6 gap-y-8 lg:grid-cols-4 lg:divide-x lg:divide-gray-200">
+        <dl className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:divide-x lg:divide-gray-200">
           {stats.map((s) => (
             <div
               key={s.label}

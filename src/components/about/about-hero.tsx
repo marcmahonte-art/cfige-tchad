@@ -28,7 +28,7 @@ export function AboutHero() {
           <div className="relative">
             <Image
               src="/images/apropos/apropos.png"
-              alt=""
+              alt="Portrait de l'équipe CFIGE au bureau"
               fill
               priority
               className="object-cover object-center"

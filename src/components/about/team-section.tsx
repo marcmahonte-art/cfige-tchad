@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Mail, Linkedin } from "lucide-react";
+import { site } from "@/data/site";
 
 const team = [
   {
@@ -7,24 +8,32 @@ const team = [
     role: "Associé gérant",
     bio: "Fort de nombreuses années d'expérience dans la formation professionnelle au Tchad, Hassan pilote la stratégie globale du CFIGE.",
     image: "/images/apropos/equipe/associe_gerant_cfige_Hassan Ngarmbassa Ngargouleye.jpg",
+    linkedin: "#",
+    email: site.email,
   },
   {
     name: "Abel",
     role: "Fondateur",
     bio: "Abel a créé le CFIGE dans le but de proposer des formations de qualité accessible à tous les Tchadiens.",
     image: "/images/apropos/equipe/fondateur_cfige _MBATALBAYE ABEL.png",
+    linkedin: "#",
+    email: site.email,
   },
   {
     name: "Adore",
     role: "Directeur informatique",
     bio: "Adore supervise le développement des programmes numériques et s'assure de leur pertinence technologique.",
     image: "/images/apropos/equipe/informaticien_cfige_ADORE ADJITEBAYE RAKIDJON.png",
+    linkedin: "#",
+    email: site.email,
   },
   {
     name: "TOKMA",
     role: "Responsable des opérations",
     bio: "TOKMA assure le bon fonctionnement quotidien des formations et des partenariats industriels.",
     image: "/images/apropos/equipe/responsable_cfige_TOKMA ONDJE.jpg",
+    linkedin: "#",
+    email: site.email,
   },
 ];
 
@@ -78,13 +87,15 @@ export function TeamSection() {
                 </p>
                 <div className="mt-4 flex justify-center space-x-3">
                   <a
-                    href="#"
+                    href={m.linkedin}
+                    aria-label={`LinkedIn de ${m.name}`}
                     className="w-6 h-6 rounded-full bg-[#F4F5F6] flex items-center justify-center"
                   >
                     <Linkedin className="w-4 h-4 text-gray-500" />
                   </a>
                   <a
-                    href="#"
+                    href={`mailto:${m.email}`}
+                    aria-label={`Email de ${m.name}`}
                     className="w-6 h-6 rounded-full bg-[#F4F5F6] flex items-center justify-center"
                   >
                     <Mail className="w-4 h-4 text-gray-500" />

@@ -17,11 +17,11 @@ const servicesLinks = [
   "Conseil",
 ];
 const cfigeLinks = [
-  { label: "À propos", href: "/#apropos" },
-  { label: "Équipe", href: "/#apropos" },
-  { label: "Blog", href: "/#blog" },
-  { label: "Contact", href: "/#contact" },
-];
+    { label: "À propos", href: "/a-propos" },
+    { label: "Équipe", href: "/a-propos#equipe" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/contact" },
+  ];
 
 export function Footer() {
   return (

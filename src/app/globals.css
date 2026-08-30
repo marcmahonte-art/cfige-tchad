@@ -75,12 +75,18 @@
 }
 
 @layer components {
-  /* Container: max 1240px, responsive side gutters */
-  .cfige-container {
-    width: calc(100% - 32px);
-    max-width: 1240px;
-    margin-inline: auto;
-  }
+/* Container site (about pages) */
+.container-site {
+  width: min(calc(100% - 86px), 1180px);
+  margin-inline: auto;
+}
+
+/* Container: max 1240px, responsive side gutters */
+.cfige-container {
+  width: calc(100% - 32px);
+  max-width: 1240px;
+  margin-inline: auto;
+}
 
   @media (min-width: 1024px) {
     .cfige-container {
