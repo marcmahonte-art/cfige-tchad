@@ -29,16 +29,16 @@ export function AboutHero() {
             </p>
           </div>
 
-          <div className="relative h-[280px] sm:h-[340px] lg:h-[380px] w-full rounded-2xl overflow-hidden border border-gray-200 shadow-cfige-sm bg-gray-50">
-            <Image
-              src="/images/apropos/apropos.png"
-              alt="CFIGE campus et apprenants"
-              fill
-              priority
-              className="object-cover object-center"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-            />
-          </div>
+            <div className="flex justify-center items-center py-8">
+              <Image
+                src="/logo_cfige.png"
+                alt="CFIGE logo"
+                width={300}
+                height={300}
+                priority
+                className="object-contain"
+              />
+            </div>
         </div>
       </div>
     </section>

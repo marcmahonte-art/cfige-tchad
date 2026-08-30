@@ -55,7 +55,7 @@ export const formations: Formation[] = [
     level: "Intermédiaire",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/dev-web-2.jpg",
+    image: "/images/formations/Économie de gestion.png",
     icon: LineChart,
   },
   {
@@ -68,7 +68,7 @@ export const formations: Formation[] = [
     level: "Intermédiaire",
     mode: "Hybride",
     price: "À confirmer",
-    image: "/images/apps-1.jpg",
+    image: "/images/formations/Management des projets.png",
     icon: FolderKanban,
   },
   {
@@ -81,7 +81,7 @@ export const formations: Formation[] = [
     level: "Intermédiaire",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/formations/gestion-ressources-humaines.png",
+    image: "/images/formations/Gestion des ressources humaines.png",
     icon: Users,
   },
   {
@@ -94,7 +94,7 @@ export const formations: Formation[] = [
     level: "Intermédiaire",
     mode: "Hybride",
     price: "À confirmer",
-    image: "/images/apps-3.jpg",
+    image: "/images/formations/Marketing et stratégie.png",
     icon: Megaphone,
   },
   {
@@ -107,7 +107,7 @@ export const formations: Formation[] = [
     level: "Débutant",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/dev-web.jpg",
+    image: "/images/formations/Sciences juridiques.png",
     icon: Gavel,
   },
   {
@@ -120,7 +120,7 @@ export const formations: Formation[] = [
     level: "Débutant",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/apps-3.jpg",
+    image: "/images/formations/Maintenance Informatique.png",
     icon: Cpu,
   },
   {
@@ -133,7 +133,7 @@ export const formations: Formation[] = [
     level: "Débutant",
     mode: "Hybride",
     price: "À confirmer",
-    image: "/images/dev-web.jpg",
+    image: "/images/dev-web-2.jpg",
     icon: Code2,
   },
   {
@@ -159,7 +159,7 @@ export const formations: Formation[] = [
     level: "Intermédiaire",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/apps-2.jpg",
+    image: "/images/formations/comptabilite-gestion.png"
     icon: Building2,
   },
   {
@@ -172,7 +172,7 @@ export const formations: Formation[] = [
     level: "Débutant",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/apps-1.jpg",
+    image: "/images/formations/Réseaux informatiques.png",
     icon: Network,
   },
   {
@@ -185,7 +185,7 @@ export const formations: Formation[] = [
     level: "Intermédiaire",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/apps-2.jpg",
+    image: "/images/formations/Administration des systèmes.png",
     icon: Server,
   },
   {
@@ -198,7 +198,7 @@ export const formations: Formation[] = [
     level: "Avancé",
     mode: "En ligne",
     price: "À confirmer",
-    image: "/images/apps-3.jpg",
+    image: "/images/formations/Cybersécurité & sécurité des réseaux.png",
     icon: ShieldCheck,
   },
 ];
