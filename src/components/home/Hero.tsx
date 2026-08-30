@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, GraduationCap, Cpu, Users, Award } from "lucide-react";
+import { ArrowRight, GraduationCap, Cpu, Users, Award, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -47,9 +47,15 @@ export function Hero() {
             style={{ animationDelay: "180ms" }}
           >
             <Button asChild size="lg" className="h-12 w-full sm:w-auto">
+              <a href="/formations">
+                Découvrir nos formations
+                <ArrowRight className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="h-12 w-full sm:w-auto">
               <a href="/images/brochure-cfige.pdf" download>
                 Notre brochure
-                <Cpu className="h-5 w-5" />
+                <Download className="h-5 w-5" />
               </a>
             </Button>
           </div>
