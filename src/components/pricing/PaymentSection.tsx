@@ -14,7 +14,7 @@ function PaymentStep({ number, title, subtitle, description, icon }: PaymentStep
       <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#FFF1F2] text-primary">
         {icon}
       </span>
-      <span className="text-[11px] font-bold uppercase tracking-[0.08em] text-primary">
+      <span className="text-[13px] font-bold uppercase tracking-[0.08em] text-primary">
         Étape {number}
       </span>
       <h3 className="mt-2 text-[16px] font-bold leading-5 text-[#17212B]">

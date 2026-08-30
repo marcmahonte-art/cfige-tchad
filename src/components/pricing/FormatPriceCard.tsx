@@ -38,7 +38,7 @@ export function FormatPriceCard({
         <span className="text-[31px] font-extrabold leading-none text-primary">
           {price}
         </span>
-        <span className="block text-[11px] font-medium text-[#69737D] mt-1">
+        <span className="block text-[13px] font-medium text-[#69737D] mt-1">
           FCFA
         </span>
         <div className="mt-4 flex items-center gap-1 text-primary">

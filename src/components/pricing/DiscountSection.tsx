@@ -26,7 +26,7 @@ export function DiscountSection() {
             </div>
             <p className="text-[28px] font-extrabold text-primary">10 %</p>
             <p className="text-[12px] text-[#69737D]">à 20 %</p>
-            <p className="mt-1 text-[11px] text-[#69737D]">selon programme</p>
+            <p className="mt-1 text-[13px] text-[#69737D]">selon programme</p>
           </div>
 
           {/* Groupes */}
@@ -64,7 +64,7 @@ export function DiscountSection() {
             </div>
             <p className="text-[28px] font-extrabold text-primary">10 %</p>
             <p className="text-[12px] text-[#69737D]">à 30 %</p>
-            <p className="mt-1 text-[11px] text-[#69737D]">
+            <p className="mt-1 text-[13px] text-[#69737D]">
               selon volume annuel et convention
             </p>
           </div>

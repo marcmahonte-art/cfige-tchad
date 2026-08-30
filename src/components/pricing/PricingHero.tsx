@@ -43,7 +43,7 @@ export function PricingHero() {
                   </svg>
                 </span>
                 <div>
-                  <p className="text-[11px] font-bold text-[#17212B]">
+                  <p className="text-[13px] font-bold text-[#17212B]">
                     Qualité garantie
                   </p>
                   <p className="text-[9.5px] leading-[1.4] text-[#69737D]">
@@ -69,7 +69,7 @@ export function PricingHero() {
                   </svg>
                 </span>
                 <div>
-                  <p className="text-[11px] font-bold text-[#17212B]">
+                  <p className="text-[13px] font-bold text-[#17212B]">
                     Tarifs compétitifs
                   </p>
                   <p className="text-[9.5px] leading-[1.4] text-[#69737D]">
@@ -95,7 +95,7 @@ export function PricingHero() {
                   </svg>
                 </span>
                 <div>
-                  <p className="text-[11px] font-bold text-[#17212B]">
+                  <p className="text-[13px] font-bold text-[#17212B]">
                     Modalités flexibles
                   </p>
                   <p className="text-[9.5px] leading-[1.4] text-[#69737D]">
@@ -121,7 +121,7 @@ export function PricingHero() {
                   </svg>
                 </span>
                 <div>
-                  <p className="text-[11px] font-bold text-[#17212B]">
+                  <p className="text-[13px] font-bold text-[#17212B]">
                     Accompagnement
                   </p>
                   <p className="text-[9.5px] leading-[1.4] text-[#69737D]">
