@@ -2,8 +2,8 @@ import { Hero } from "@/components/home/Hero";
 import { Stats } from "@/components/home/Stats";
 import { AboutSection } from "@/components/home/AboutSection";
 import { ExpertiseSection } from "@/components/home/ExpertiseSection";
-import { FormationSection } from "@/components/home/FormationSection";
 import { ManagementServices } from "@/components/home/ManagementServices";
+import { FormationSection } from "@/components/home/FormationSection";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { WhyCfige } from "@/components/home/WhyCfige";
 import { MethodSection } from "@/components/home/MethodSection";
@@ -19,8 +19,8 @@ export default function HomePage() {
       <Stats />
       <AboutSection />
       <ExpertiseSection />
-      <FormationSection />
       <ManagementServices />
+      <FormationSection />
       <ServicesSection />
       <WhyCfige />
       <MethodSection />

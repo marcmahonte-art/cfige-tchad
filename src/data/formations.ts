@@ -42,7 +42,7 @@ export const formations: Formation[] = [
     level: "Avancé",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/dev-web.jpg",
+    image: "/images/formations/audit-contrôle-de-gestion.png",
     icon: Scale,
   },
   {
@@ -81,7 +81,7 @@ export const formations: Formation[] = [
     level: "Intermédiaire",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/apps-2.jpg",
+    image: "/images/formations/gestion-ressources-humaines.png",
     icon: Users,
   },
   {
@@ -146,7 +146,7 @@ export const formations: Formation[] = [
     level: "Débutant",
     mode: "Présentiel",
     price: "À confirmer",
-    image: "/images/apps-1.jpg",
+    image: "/images/formations/comptabilite-gestion.png",
     icon: Calculator,
   },
   {
