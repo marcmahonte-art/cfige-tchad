@@ -23,7 +23,7 @@ export function ValuesSection() {
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {values.map((v) => {
-            const Icon = v.icon;
+            const Icon = v.icon as React.ElementType;
             return (
               <Card
                 key={v.title}
