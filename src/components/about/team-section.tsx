@@ -38,10 +38,10 @@ export function TeamSection() {
                 <span className="block font-bold text-[15px] text-[#17212B] mb-[5px]">
                   {m.name}
                 </span>
-                <span className="text-[11px] font-bold text-[#E10B1A] mb-[3px]">
+                <span className="text-[13px] font-bold text-[#E10B1A] mb-[3px]">
                   {m.role}
                 </span>
-                <p className="text-[11px] leading-[16px] text-center text-[#4F5861]">
+                <p className="text-[13px] leading-[16px] text-center text-[#4F5861]">
                   {m.bio}
                 </p>
                 <div className="mt-4 flex justify-center space-x-3">

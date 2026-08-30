@@ -40,7 +40,7 @@ export function MethodSection() {
                   style={{ borderTop: "1px dashed rgba(225,11,26,.55)" }}
                 />
                 <span
-                  className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-[#E10B1A] text-[11px] font-bold text-white"
+                  className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-[#E10B1A] text-[13px] font-bold text-white"
                   aria-hidden="true"
                 >
                   {m.number}
@@ -51,7 +51,7 @@ export function MethodSection() {
                   </span>
                 )}
                 <div className="pt-3">
-                  <h3 className="text-[11px] font-bold">{m.title}</h3>
+                  <h3 className="text-[13px] font-bold">{m.title}</h3>
                   <p className="mt-1 text-[9.5px] leading-[16px]">
                     {m.description}
                   </p>

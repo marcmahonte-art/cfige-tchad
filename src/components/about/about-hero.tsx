@@ -13,11 +13,11 @@ export function AboutHero() {
             <p className="text-xs font-bold uppercase tracking-[0.08em] text-primary">À PROPOS —</p>
             <h1
               id="about-hero-title"
-              className="mt-2 text-[36px] font-bold leading-[1.12] tracking-[-0.035em] text-white"
+              className="mt-2 text-[40px] font-bold leading-[1.05] tracking-[-0.03em] text-white md:text-[47px]"
             >
               Qui <span className="text-primary">sommes-nous ?</span>
             </h1>
-            <p className="mt-4 max-w-[335px] text-[11px] leading-[1.8] text-[#303B45]">
+            <p className="mt-4 max-w-[335px] text-[13px] leading-[1.8] text-[#303B45]">
               CFIGE (Centre de Formation Informatique et de Gestion) accompagne
               étudiants, professionnels, entreprises et organisations dans le
               développement de compétences pratiques, numériques et managériales
