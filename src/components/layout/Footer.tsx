@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { site } from "@/data/site";
+// rebuild-force-2026
 
 const formationsLinks = [
   "Toutes les formations",
