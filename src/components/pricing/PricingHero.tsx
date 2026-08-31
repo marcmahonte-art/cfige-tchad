@@ -88,8 +88,8 @@ export function PricingHero() {
 
           <div className="relative h-[300px] sm:h-[360px] lg:h-[400px] w-full rounded-2xl overflow-hidden border border-gray-200 shadow-cfige-sm bg-gray-50">
             <Image
-              src="/images/apropos/apropos.png"
-              alt="Locaux et apprenants du CFIGE"
+              src="/images/hero/hero-tarifs.png"
+              alt="Tarifs et modalités CFIGE"
               fill
               priority
               className="object-cover object-center"

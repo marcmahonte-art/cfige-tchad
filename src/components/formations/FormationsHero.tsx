@@ -7,8 +7,8 @@ export function FormationsHero() {
       className="relative mx-auto mt-[10px] h-[230px] w-[calc(100%-36px)] overflow-hidden rounded-[3px] sm:h-[270px] sm:w-[calc(100%-40px)] md:mt-[12px] md:h-[350px] md:w-[calc(100%-64px)] lg:mt-[15px] lg:h-[377px] lg:w-[calc(100%-96px)] lg:max-w-[1180px]"
     >
       <Image
-        src="/images/hero.png"
-        alt=""
+        src="/images/hero/hero-formations.png"
+        alt="Formations CFIGE"
         fill
         priority
         quality={88}

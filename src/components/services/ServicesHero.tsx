@@ -58,8 +58,8 @@ export function ServicesHero() {
             <div className="overflow-hidden rounded-[46%_0_0_46%] border-l-[10px] border-primary">
               <div className="relative aspect-[454/374] w-full">
                 <Image
-                  src="/images/hero.png"
-                  alt="Équipe du CFIGE devant le bâtiment"
+                  src="/images/hero/hero-services.png"
+                  alt="Services & Produits CFIGE"
                   fill
                   priority
                   sizes="(max-width: 1023px) 100vw, 540px"
