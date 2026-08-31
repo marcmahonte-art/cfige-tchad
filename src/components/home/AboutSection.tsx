@@ -32,32 +32,20 @@ export function AboutSection() {
           >
             Un partenaire pour vos compétences et votre transformation digitale
           </h2>
-          <div className="mt-5 max-w-[560px] space-y-4 text-base leading-6 text-gray-600">
+          <div className="mt-5 max-w-[560px] space-y-4 text-base leading-relaxed text-gray-600">
             <p>
-              Le CFIGE SARL est un centre spécialisé dans la formation
-              professionnelle, les services numériques et le conseil en gestion
-              basé à N&apos;Djamena au Tchad.
+              Au croisement des enjeux académiques et des réalités professionnelles, <span className="font-semibold text-gray-900">LE CFIGE</span> accompagne les ambitions des étudiants, des PME, des ONG et des administrations au Tchad et en Afrique centrale.
             </p>
             <p>
-              <span className="font-semibold text-gray-900">
-                Notre mission :
-              </span>{" "}
-              est de renforcer l&apos;employabilité des jeunes, d&apos;accompagner
-              les organisations dans leur transformation digitale et de
-              contribuer au développement des compétences professionnelles au
-              Tchad et en Afrique centrale.
+              Nous combinons <span className="font-semibold text-gray-900">rigueur fiscale</span>, <span className="font-semibold text-gray-900">excellence managériale</span> et <span className="font-semibold text-gray-900">solutions technologiques innovantes</span> afin de transformer vos défis quotidiens en véritables leviers de croissance et de performance.
             </p>
-            <p>
-              <span className="font-semibold text-gray-900">
-                Notre vision :
-              </span>{" "}
-              Devenir un centre de référence en formation professionnelle et en
-              transformation digitale en Afrique centrale.
+            <p className="text-sm font-medium text-primary">
+              CONSEIL • FORMATION • DIGITAL • EXTERNALISATION
             </p>
           </div>
           <div className="mt-6">
             <Button asChild variant="outline">
-              <a href="#apropos">
+              <a href="/a-propos">
                 Découvrir le CFIGE
                 <ArrowRight className="h-5 w-5" />
               </a>

@@ -11,7 +11,7 @@ export function AboutHero() {
           <div>
             <div className="flex items-center gap-2">
               <span className="text-xs font-bold uppercase tracking-[0.08em] text-primary">
-                À PROPOS
+                ACCÉLÉRATEUR DE PERFORMANCE &amp; DE TRANSFORMATION
               </span>
               <span className="h-0.5 w-6 bg-primary" />
             </div>
@@ -19,14 +19,24 @@ export function AboutHero() {
               id="about-hero-title"
               className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight text-gray-900"
             >
-              Qui <span className="text-primary">sommes-nous ?</span>
+              Former les talents. <br />
+              <span className="text-primary">Transformer les organisations.</span>
             </h1>
             <p className="mt-5 text-base sm:text-lg leading-relaxed text-gray-600 max-w-xl">
-              CFIGE (Centre de Formation Informatique et de Gestion) accompagne
-              étudiants, professionnels, entreprises et organisations dans le
-              développement de compétences pratiques, numériques et managériales
-              adaptées aux exigences du marché.
+              Au croisement des enjeux académiques et des réalités professionnelles, <span className="font-semibold text-gray-900">LE CFIGE</span> accompagne les ambitions des étudiants, des PME, des ONG et des administrations au Tchad et en Afrique centrale.
             </p>
+            <p className="mt-3 text-sm sm:text-base leading-relaxed text-gray-600 max-w-xl">
+              Nous combinons rigueur fiscale, excellence managériale et solutions technologiques innovantes afin de transformer vos défis quotidiens en véritables leviers de croissance.
+            </p>
+            <div className="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary-light px-3.5 py-1.5 text-xs font-bold text-primary">
+              <span>CONSEIL</span>
+              <span>•</span>
+              <span>FORMATION</span>
+              <span>•</span>
+              <span>DIGITAL</span>
+              <span>•</span>
+              <span>EXTERNALISATION</span>
+            </div>
           </div>
 
             <div className="flex justify-center items-center py-4 lg:py-0">

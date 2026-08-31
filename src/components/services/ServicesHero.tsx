@@ -33,14 +33,10 @@ export function ServicesHero() {
             </h1>
             <span className="mt-3 block h-[3px] w-10 rounded-full bg-primary" />
             <p className="mt-5 text-[19px] font-medium leading-7 text-gray-700">
-              Des solutions numériques et de formation au service de votre
-              organisation.
+              Nous ne vous donnons pas seulement des conseils, nous implémentons des solutions.
             </p>
-            <p className="mt-3 max-w-[467px] text-[13px] leading-[19px] text-gray-500">
-              Du développement web à la transformation digitale, le CFIGE conçoit,
-              déploie et accompagne vos projets technologiques au Tchad. Nous
-              combinons expertise technique, pédagogie et proximité pour des
-              résultats concrets et durables.
+            <p className="mt-3 max-w-[520px] text-[14px] leading-relaxed text-gray-600">
+              Du développement web aux tableaux de bord décisionnels (Power BI, Excel), en passant par la maintenance IT, les diagnostics de performance pour PME/PMI et l&apos;externalisation de gestion, le CFIGE conçoit et déploie des solutions technologiques et managériales adaptées à vos réalités.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <Button asChild>

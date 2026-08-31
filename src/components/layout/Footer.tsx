@@ -39,9 +39,11 @@ export function Footer() {
               height={36}
               className="h-9 w-auto brightness-0 invert"
             />
-            <p className="mt-4 max-w-xs text-sm leading-6 text-gray-400">
-              {site.fullName}. Formations professionnelles, solutions numériques
-              et conseil à {site.city}, {site.country}.
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-gray-400">
+              {site.fullName}. Accélérateur de performance &amp; de transformation à {site.city}, {site.country}.
+            </p>
+            <p className="mt-2 text-xs font-semibold text-primary">
+              Former les talents. Transformer les organisations.
             </p>
           </div>
 
@@ -130,7 +132,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-5">
           <div className="flex flex-col items-start justify-between gap-3 text-xs text-gray-400 sm:flex-row sm:items-center">
-            <p>© {new Date().getFullYear()} CFIGE Tchad. Tous droits réservés.</p>
+            <p>© {new Date().getFullYear()} CFIGE Tchad. Ensemble, bâtissons la performance de demain.</p>
             <div className="flex gap-5">
               <a href="#" className="hover:text-white">
                 Mentions légales
